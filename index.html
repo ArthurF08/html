@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
+
 <head>
-    <title>CEP - API</title>
+    <title>API DOS GATOS</title>
+    <link rel="stylesheet" href="style.css">
+    <h2>API DOS GATOS</h2>
 </head>
+
 <body>
-    <h2>Buscar CEP</h2>
-    <form id="cep-form">
-        <input type="text" id="cep-input" placeholder="digite o CEP" maxlength="8">
-        <button type="submit">Buscar</button>
-    </form>
-    <div id="resultado"></div>
+    <div class="container">
+
+        <button id="fetch-cat-button">buscar novo gato</button>
+
+        <div id="loading" class="loading hidden">carregando...</div>
+
+        <div id="cat-container"></div>
+
+    </div>
+
 
 </body>
 <script src="script.js"></script>
-<script src="style.css"></script>
-</body>
+
+</html>
